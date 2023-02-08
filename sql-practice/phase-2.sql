@@ -1,1 +1,18 @@
 -- Your code here
+
+
+CREATE TABLE customers (
+  id INTEGER PRIMARY KEY,
+  name VARCHAR(40) NOT NULL,
+  phone NUMERIC(10,0) PRIMARY KEY,
+  email VARCHAR(255) PRIMARY KEY,
+  points INTEGER >= 5 NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
+
+
+CREATE TABLE coffee_orders (
+  id INTEGER PRIMARY KEY,
+  is_redeemed 0,
+  ordered_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
