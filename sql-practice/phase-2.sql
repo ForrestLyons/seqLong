@@ -1,4 +1,6 @@
 -- Your code here
+DROP TABLE IF EXISTS customers;
+DROP TABLE IF EXISTS coffee_orders;
 
 
 CREATE TABLE customers (
